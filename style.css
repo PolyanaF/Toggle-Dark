@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+  }
+
+body {
+  transition: .6s;
+}
+
+#geral {
+  display: flex;
+  height: 100vh;
+ 
+}
+
+header{
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(134, 127, 123);
+  padding: 20px;
+  display: flex;
+  align-items: center; /* ALINHA EM Y */
+  justify-content: flex-end; /* ALINHA EM X */
+  margin-bottom: 50px;
+}
+
+input[type="checkbox"] {
+  width: 50px;
+  height: 25px;
+
+  /* Tirando a aparencia*/
+  appearance: none;
+
+  background-color: rgb(255, 164, 111);
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 16px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: .4s;
+  position: relative;
+}
+
+input:checked[type='checkbox'] {
+  background-color: rgba(146, 58, 180, 0.25);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #EDF3F1;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+  top: 0;
+  left: 0;
+  transition: .4s;
+}
+
+input:checked[type="checkbox"]::before {
+  left: 25px;
+  background-color: rgba(146, 58, 180, 0.25);
+}
+
+h3 {
+   padding: 5px;
+   border: 2px solid rgb(134, 127, 123);
+   margin: auto;
+   color: rgb(134, 127, 123);
+}
+
+.container {
+  border: 2px solid rgb(134, 127, 123);
+  background-color: antiquewhite;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+
+  /* Deixa nossos circulos pulando linha caso necessario  */
+  flex-wrap: wrap;
+}
+
+.divPadrao {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  display: flex;
+  
+}
+
+.center {
+  justify-content: center; /* ALINHA EM X */
+}
+
+.flexEnd {
+  justify-content: flex-end; /* ALINHA EM X */
+}
+
+.spaceBetween {
+  justify-content: space-between; /* ALINHA EM X */
+}
+
+p {
+  color: aliceblue;
+  padding: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 10px;
+
+  /* Numero Dentro da Bola */
+  display: flex;
+  align-items: center; /* ALINHA EM Y */
+  justify-content: center; /* ALINHA EM X */
+}
+
+.num1 {
+  background-color: rgb(165, 68, 68);
+}
+
+.num2 {
+  background-color: rgb(55, 145, 67);
+}
+
+.num3 {
+  background-color: rgb(36, 122, 156);
+}
+
+/* DARK MODE */
+.body-dark {
+  background-color: rgb(46, 46, 46);
+}
+
+.container-dark{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.bolinhas-dark {
+  background-color: rgba(146, 58, 180, 0.25);
+}
+
+.header-dark {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+
